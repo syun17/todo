@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>課題管理</h1>
+        <ul>
+            <li>入力</li>
+            <li>カレンダー</li>
+            <li>課題リスト</li>
+            <li>総合データ</li>
+        </ul>
+    </header>
+    <main>
+            <!--入力フォーム-->
+        <section>
+            <form>
+                <p>
+                    課題名
+                    <input id="task_name" type="text" value="">
+                </p>
+                <p>
+                    最終期限
+                    <input type="date">
+                </p>
+                <p>
+                    目標期限
+                    <input type="date">
+                </p>
+                <p>
+                    所要時間
+                    <input id="take_value" type="number">
+                </p>
+                <button id="submit" type="button">追加</button>
+            </form>
+        </section>
+        <section>
+            <h2>課題リスト</h2>
+            <ul id="task_list"></ul>
+        </section>
+        <section>
+            <h2>綜合データ</h2>
+        </section>
+    </main>
+    
+    <!--表示
+        課題名
+        最終期限
+        目標期限
+        所要時間
+        残り期間
+    -->
+    
+
+    <!--総合データ
+        総所要時間　sum(所要時間)
+        直近期限　最終期限 asc
+        総課題数　sum(課題)
+    -->
+</body>
+</html>
